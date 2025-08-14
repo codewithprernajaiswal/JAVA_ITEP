@@ -6,7 +6,7 @@ class Test{
                 System.out.print(j);
             }else{
                 if(j==1||j==i){
-                    System.out.print(j);
+                    System.out.print(i);
                 }else{
                     System.out.print(" ");
                 }

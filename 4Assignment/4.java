@@ -4,11 +4,11 @@ class Test{
         Scanner sc=new Scanner(System.in);
         System.out.print("enter number=");
         int n=sc.nextInt();
-        for(int i=1;i<=5;i++){
-            for(int j=i;j<=5;j++){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
              System.out.print("*");   
             }
-            System.out.println("*");
+            System.out.println();
         }
     }
 }
