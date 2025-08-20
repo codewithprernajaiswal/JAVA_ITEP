@@ -1,3 +1,4 @@
+
 class Time{
     private int hour;
     private int min;

@@ -1,3 +1,4 @@
+// Write a program to cyclically rotate array by one.
 class Test {
     public static void main(String args[]){
         int arr[] = {1,2,3,4,5,6,6,7};

@@ -1,3 +1,4 @@
+// 23. Write a Java program to find the sum and average of one dimensional integer array.
 import java.util.Scanner;
 class Test{
     public static void main(String args[]){

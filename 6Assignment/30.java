@@ -1,3 +1,5 @@
+
+// 30. Suppose A, B, C are arrays of integers of size M, N, and M + N respectively. The numbers in array A appear in ascending order while the numbers in array B appear in descending order. Write a java progtam to produce third array C by merging arrays A and B in ascending order. . 
 import java.util.Scanner;
 
 class Test {

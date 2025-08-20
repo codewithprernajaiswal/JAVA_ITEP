@@ -1,3 +1,4 @@
+// 24. Write a Java program to swap first and last element of an integer 1-d array.
 import java.util.Scanner;
 class Test{
     public static void main(String args[]){

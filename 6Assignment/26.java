@@ -1,3 +1,4 @@
+// 26. Write a Java program to find the largest and smallest element of an array.
 import java.util.Scanner;
 class Test{
     public static void main(String args[]){
