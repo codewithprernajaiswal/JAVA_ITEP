@@ -7,7 +7,8 @@ class Test{
             for(int j=0;j<=i-1;j++){
                 int a=65;
                 char c=(char)(a);
-                System.out.print(c+i+" ");
+                System.out.print(c+" ");
+                c++;
             }
             System.out.println();
         }

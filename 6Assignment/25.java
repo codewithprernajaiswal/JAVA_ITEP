@@ -12,12 +12,15 @@ class Test{
             a[i]=sc.nextInt();
         }
  
-      for(int i=0;i<n/2;i++){
+      // for(int i=0;i<n/2;i++){
         
-                int t=a[i];
-                a[i]=a[a.length-1-i];
-                a[a.length-1-i]=t;
-        }
+      //           int t=a[i];
+      //           a[i]=a[a.length-1-i];
+      //           a[a.length-1-i]=t;
+      //   }
+      for(int i=a.length-1;i>=0;i--){
+        System.out.println(a[i]);
+      }
       
 
       System.out.println("reverse Data..");

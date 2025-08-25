@@ -1,8 +1,5 @@
-// 5) Write a java program to reverse each word of String.
-// Sample Input: Java Is Plateform Independent
-// Output: avaJ sI mrofetalP tnednepednI
+// 29. Write a Java program to Reverse Each Word of a String
 import java.util.Scanner;
-
 class Test{
     public static String Reverse(String str){
         String s="";
@@ -10,7 +7,7 @@ class Test{
             s+=str.charAt(i);
         }
         return s;
-        // System.out.println("new ="+s);
+       
     }
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
