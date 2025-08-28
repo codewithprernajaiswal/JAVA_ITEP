@@ -5,11 +5,13 @@ class Test{
                 System.out.print(" ");
             }
             for(int j=1;j<=i;j++){
-                // if(i==j||j==1||i==5){
-                //     System.out.print("X");
-                // }
-
-                System.out.print("*");
+                if(i==5||j==1||j==i){
+                    System.out.print("X"+" ");
+                }
+                else{
+                    System.out.print("_ ");
+                }
+                
             }
           System.out.println();
         }
