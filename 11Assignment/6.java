@@ -1,3 +1,4 @@
+import java.util.Scanner;
 abstract  class Animal {
     private int age;
     private String name;
@@ -54,10 +55,19 @@ class Parrot extends Animal implements Flyable{
 }
 class Test{
     public static void main(String args[]){
-        Lion l =new Lion("tiger",12);
-         l.showinfo();
-        l.eat();
-        l.makeSound();
+        // Lion l =new Lion("tiger",12);
+        //  l.showinfo();
+        // l.eat();
+        // l.makeSound();
+        Scanner sc = new Scanner(System.in);
+
+        // Lion
+        System.out.println("Enter Lion name: ");
+        String lionName = sc.nextLine();
+        System.out.println("Enter Lion age: ");
+        int lionAge = sc.nextInt();
+       
+        Lion l = new Lion(lionName, lionAge);
         
         Elephant e =new Elephant("laddu",10);
         e.showinfo();
@@ -68,6 +78,6 @@ class Test{
         p.eat();
         p.makeSound();
         p.fly();
-      
+       sc.close();
     }
 }
