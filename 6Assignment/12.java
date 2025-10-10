@@ -4,7 +4,7 @@ class Test{
 int n2[] = {6, 7, 20, 80, 100};
 int n3[] = {3, 4, 15, 20, 30, 70, 80, 120};
 int x=0,y=0,z=0;
-int al[];
+// int al[];
 while(x<n1.length && y<n2.length && z<n3.length){
     if(n1[x]==n2[y] && n2[y]==n3[z]){
         System.out.println(n1[x]);

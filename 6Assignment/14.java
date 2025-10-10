@@ -9,7 +9,7 @@ class Test{
                 }
                 // System.out.println(arr[i]);
             }
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
         }
     }
 }

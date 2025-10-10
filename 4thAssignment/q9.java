@@ -12,10 +12,6 @@ class Test{
                 i++;
                  
             }
-            System.out.println("\n Sum of  " +n + " 
-            
-            
-            
-             number is "+sum);          
+            System.out.println("\n Sum of  " +n+" number is "+sum);          
         }
     }

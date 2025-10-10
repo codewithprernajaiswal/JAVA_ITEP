@@ -1,27 +1,27 @@
 import java.util.ArrayList;
 // 13. Write a Java program to create a class called "Inventory" with a collection of products and methods to add and remove products, and to check for low inventory.
 class Inventory{
-    ArrayList<String>products=new ArrayList<String>();;
+    ArrayList<Products>pl=new ArrayList<Products>();
+//  
 
-//  public Inventory(){}
 //  public Inventory(String products){
     
 
 //  }
- public void addProduct(String product1){
-    products.add(product1);
+public void addProduct(Products p){
+   pl.add(p);
  }
- public void removeProduct(String product1){
-    products.remove(product1);
+ public void removeProduct(Products p){
+    pl.remove(p);
  }
  public void Display(){
-    System.out.println(products);
-    // for(String pr:products){
-    //     System.out.println(products);
-    // }
+    
+    for(Products p:pl){
+       p.display();
+    }
  }
- public void lowinventory(){
-    if(products.size()<10){
+  public void lowinventory(){
+    if(pl.size()<10){
         System.out.println(" low inventory...");
 
     }else{
@@ -30,15 +30,42 @@ class Inventory{
  }
 
 }
+class Products{
+
+ private String name;
+ private int productQ;
+ public Products(){}
+ public Products(String name,int productQ){
+    this.name=name;
+    this.productQ=productQ;
+ }
+ 
+ public void display(){
+    System.out.println("product name "+name+" quantity "+productQ);
+ }
+//  public void lowinventory(){
+//     if(.size()<10){
+//         System.out.println(" low inventory...");
+
+//     }else{
+//         System.out.println("not in low inventory...");
+//     }
+//  }
+
+}
 class Test{
     public static void main(String args[]){
+        Products p1=new Products("car1 ",2);
+        Products p2=new Products("car2 ",2);
+        Products p3=new Products("car3 ",2);
+        Products p4=new Products("car 4 ",2);
         Inventory inven=new Inventory();
-        inven.addProduct("soap");
-        inven.addProduct("oil");
-        inven.addProduct("phone");
-        inven.addProduct("book");
+        inven.addProduct(p1);
+        inven.addProduct(p2);
+        inven.addProduct(p3);
+        inven.addProduct(p4);
         inven.Display();
-        inven.removeProduct("oil");
+        inven.removeProduct(p3);
         inven.Display();
         inven.lowinventory();
     }
